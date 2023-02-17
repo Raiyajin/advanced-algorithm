@@ -6,11 +6,11 @@
 * Queue
 * Stack
 
-## Searching
+## Searching algorithms
 * Dichotomy
 * Linear
 
-## Sorting
+## Sorting algorithms
 * Bubble sort
 * Inserting sort
 
