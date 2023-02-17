@@ -27,3 +27,11 @@ def algorithm(array):
         array[j + 1] = key_item
 
     return array
+
+if __name__ == "__main__":
+
+    array = [4, 2, 24, 12, 36, 44]
+
+    print(f"unsorted array : {array}")
+
+    print(f"sorted array : {algorithm(array)}")

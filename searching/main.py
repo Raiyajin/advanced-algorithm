@@ -11,7 +11,6 @@ def run_searching_algorithm(algorithm, array, value):
 
     stmt = f"algorithm({array}, {value})"
 
-
     # Execute the code ten different times and return the time
     # in seconds that each execution took
     times = repeat(setup=setup_code, stmt=stmt, repeat=3, number=10)
@@ -21,12 +20,18 @@ def run_searching_algorithm(algorithm, array, value):
 
 array = [4, 8, 24, 25, 36, 44]
 algos = ["dichotomy", "linear"]
+
 print(f"array : {array}")
+
 v = input("Input the value to search in the array : ")
+
 if len(sys.argv) >= 2:
+
     if sys.argv[1] in algos:
-        run_searching_algorithm(sys.argv[1], array)
+        run_searching_algorithm(algorithm=sys.argv[1], array=array, value=v)
+
     else: raise ValueError("not a valid algorithm")
+
 else:
         for algo in algos:
            run_searching_algorithm(algorithm=algo, array=array, value=v)

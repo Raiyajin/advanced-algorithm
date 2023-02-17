@@ -1,6 +1,5 @@
 import sys
 
-from random import randint
 from timeit import repeat
 
 def run_sorting_algorithm(algorithm, array):
