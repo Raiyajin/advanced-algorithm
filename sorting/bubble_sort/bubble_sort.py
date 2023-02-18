@@ -29,10 +29,10 @@ def algorithm(array):
 
     return array
 
+
 if __name__ == "__main__":
+    t = [4, 2, 24, 12, 36, 44]
 
-    array = [4, 2, 24, 12, 36, 44]
+    print(f"unsorted array : {t}")
 
-    print(f"unsorted array : {array}")
-
-    print(f"sorted array : {algorithm(array)}")
+    print(f"sorted array : {algorithm(t)}")

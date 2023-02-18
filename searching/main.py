@@ -1,7 +1,7 @@
 import sys
 
-from random import randint
 from timeit import repeat
+
 
 def run_searching_algorithm(algorithm, array, value):
     # Set up the context and prepare the call to the specified
@@ -18,20 +18,22 @@ def run_searching_algorithm(algorithm, array, value):
     # minimum time it took to run
     print(f"Algorithm: {algorithm}. Minimum execution time: {min(times)}")
 
-array = [4, 8, 24, 25, 36, 44]
+
+custom_array = [4, 8, 24, 25, 36, 44]
 algos = ["dichotomy", "linear"]
 
-print(f"array : {array}")
+print(f"array : {custom_array}")
 
 v = input("Input the value to search in the array : ")
 
 if len(sys.argv) >= 2:
 
     if sys.argv[1] in algos:
-        run_searching_algorithm(algorithm=sys.argv[1], array=array, value=v)
+        run_searching_algorithm(algorithm=sys.argv[1], array=custom_array, value=v)
 
-    else: raise ValueError("not a valid algorithm")
+    else:
+        raise ValueError("not a valid algorithm")
 
 else:
-        for algo in algos:
-           run_searching_algorithm(algorithm=algo, array=array, value=v)
+    for algo in algos:
+        run_searching_algorithm(algorithm=algo, array=custom_array, value=v)
